@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int roomcharge = 100;
+        int copies = in.nextInt();
+        int cost = in.nextInt();
+        int costspend= in.nextInt();
+        int totcost= copies*cost;
+        int totcostspend = costspend*copies;
+        int t = totcost - totcostspend;
+        float profit=t - roomcharge;
+        System.out.println("Number of copies sold:"+copies);
+        System.out.println("Cost of each copy:"+cost);
+        System.out.println("Cost spent by agency on each newspaper:"+costspend);
+        System.out.printf("The profit obtained is Rs.%.2f",profit);
+        
+    }
+}
