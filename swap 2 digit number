@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num = in.nextInt();
+        int n = num;
+        if(num>9 && num<100){
+            
+                int r = num % 10;
+                int q = num/10;
+                int swap = (r*10) + q;
+                System.out.println(swap);
+            
+        }
+        else if (num>=100){
+            while(n>99){
+                
+                n= n/10;
+            }
+            int o = n%10;
+            int v = n/10;
+            int s= (o*10) + v;
+            System.out.println(s);
+            
+        }
+        else{
+            System.out.println("STDOUT");
+        }
+    }
+}
